@@ -112,3 +112,8 @@ networks:
 
 volumes:
   elasticsearch:
+    driver: local
+    driver_opts:
+      type: none
+      device: /7t/elasticsearch
+      o: bind
